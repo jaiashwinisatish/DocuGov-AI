@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
@@ -30,4 +31,15 @@ export default defineConfig({
     url: 'http://localhost:8080',
     reuseExistingServer: !process.env.CI,
   },
+=======
+import { createLovableConfig } from "lovable-agent-playwright-config/config";
+
+export default createLovableConfig({
+  // Add your custom playwright configuration overrides here
+  // Example:
+  // timeout: 60000,
+  // use: {
+  //   baseURL: 'http://localhost:3000',
+  // },
+>>>>>>> 9c958419bc5dbe42281cdfffad5d103810fcdbe0
 });
